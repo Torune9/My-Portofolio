@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+body {
+    font-family: "Cabin", sans-serif;
+    background-color: #0e0f0e;
+    color: rgba(255, 255, 255, 0.872);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    box-sizing: border-box;
+    color: #ff7134;
+    font-weight: 900;
+}
+
+#section1 h1 span {
+    color: rgb(219, 219, 219);
+}
+
+.container-menu {
+    height: 100%;
+    display: flex;
+}
+
+.container-menu .wrapper-menu {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: rgb(219, 219, 219);
+}
+
+.container-menu .wrapper-menu li {
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10%;
+}
+
+.container-menu .wrapper-menu li:hover {
+    background-color: rgb(77, 76, 76);
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-profile {
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper-profile h1 {
+    font-weight: 900;
+}
+
+.wrapper-profile h3 {
+    font-size: 25px;
+    font-weight: 700;
+    overflow: hidden; /* Ensures the text appears as it's being typed */
+    white-space: nowrap; /* Keeps the text on a single line */
+    border-right: 2px solid rgba(255, 255, 255, 0.872); /* Simulates a typing cursor */
+    width: 0; /* Start with zero width */
+    animation: typing 4s steps(30, end) infinite, blink 0.75s step-end infinite; /* Adjust timing as needed */
+}
+
+.wrapper-profile h3 span {
+    font-size: 25px;
+    color: #7FA1C3;
+}
+
+.wrapper-profile h4 {
+    font-weight: 700;
+    color: #B43F3F;
+}
+
+.wrapper-image {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.089);
+    border-radius: 15%;
+    position: relative;
+}
+
+.wrapper-image img {
+    width: 80%;
+}
+
+#rocket {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 1px;
+}
+
+/* About */
+.about h1,.project h1,.skills h1,.experience h1 {
+    color: #3f68b4;
+    text-align: center;
+    border-bottom: 3px solid;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.text-about {
+    text-align: justify;
+    background-color: rgba(128, 128, 128, 0.089);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgb(219, 219, 219);
+    font-size: 17px;
+}
+
+/* Experience */
+
+.experience #wrapper-exp ul{
+    background-color: rgba(128, 128, 128, 0.089);
+    padding: 40px;
+    border-radius: 5px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.experience #wrapper-exp ul :nth-child(1){
+    font-size: 20px;
+    color: aqua;
+    font-weight: 900;
+}
+.experience #wrapper-exp ul :nth-child(2){
+    color: #bdb745;
+    font-size: 18px;
+}
+.experience #wrapper-exp ul :nth-child(3){
+    font-size: 16px;
+    color: rgb(176, 175, 174);
+}
+
+
+/* Skills */
+
+.skills .my-skill {
+    color: #ff7134;
+    text-align: start;
+    font-size: 18px;
+    border-bottom: none;
+}
+
+.child-skill {
+    text-align: justify;
+    list-style: inside;
+    list-style-type: decimal;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+
+.skill-container {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 17px;
+}
+
+.child-skill:hover {
+    transform: scale(1.1);
+}
+
+/* Project */
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: justify;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project h4 {
+    font-size: 20px;
+    color: #B43F3F;
+}
+.project h5 {
+    font-size: 16px;
+    color: #a09f9f;
+}
+
+
+/* Add default opacity and transform to the sections */
+.about, .skills, .project,.experience {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Scroll-active class to reveal elements */
+.scroll-active {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* responsive */
+@media screen and (min-width: 640px) {
+    nav{
+        font-size: 25px;
+    }
+    
+.container-menu .wrapper-menu {
+    font-size: 16px;
+}
+    body {
+        padding: 0 30px;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .wrapper-profile {
+        text-align: center;
+    }
+
+    .wrapper-profile h1 {
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    .wrapper-profile h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .wrapper-profile h3 span {
+        font-size: 20px;
+        color: #7FA1C3;
+    }
+
+    .wrapper-profile h4 {
+        font-weight: 700;
+        color: #B43F3F;
+        font-size: 15px;
+    }
+
+    .wrapper-image {
+        width: 900px;
+    }
+
+    .text-about {
+        padding: 40px;
+        font-size: 20px;
+    }
+
+    .child-skill {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about, .skills, .project, .profile,.experience {
+        padding: 0 60px;
+    }
+    .wrapper-profile {
+        text-align: center;
+    }
+
+    .wrapper-profile h1 {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .wrapper-profile h3 {
+        font-size: 35px;
+        font-weight: 700;
+    }
+
+    .wrapper-profile h3 span {
+        font-size: 40px;
+        color: #7FA1C3;
+    }
+
+    .wrapper-profile h4 {
+        font-weight: 700;
+        color: #B43F3F;
+        font-size: 25px;
+    }
+    .wrapper-profile h5 {
+        font-size: 16px;
+    }
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0% { border-right: 2px solid transparent; }
+    50% { border-right: 2px solid rgba(255, 255, 255, 0.872); }
+    100% { border-right: 2px solid transparent; }
+}
