@@ -18,27 +18,23 @@
         </section>
         <section id="section2">
             <div class="container-menu">
-                <ul class="wrapper-menu">
-                    <li>
-                        Home
-                    </li>
-                    <li>
-                        About
-                    </li>
-                    <li>
-                        Skills
-                    </li>
-                    <li>
-                        Project
-                    </li>
+                <ul class="wrapper-menu visible id="menuWrap">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#sertificate">Sertificate</a></li>
                 </ul>
+                <button type="button"  class="btn-menu" id="btn">
+                    <h1>Menu</h1>
+                </button>
             </div>
         </section>
     </nav>
     <!-- main content -->
     <main>
         <!-- Home -->
-        <section class="profile">
+        <section class="profile" id="profile">
             <div class="wrapper-profile">
                 <h1>Hello✋</h1>
                 <h3>I'm <span>Rahman Nurhayadi</span></h3>
@@ -62,8 +58,32 @@
             </div>
         </section>
         <!-- About -->
-        <section class="about">
+        <section class="about" id="about">
             <h1>About Me</h1>
+        </section>
+        <!-- Education -->
+        <section class="education" id="skills">
+            <h1>Education</h1>
+            <div id="wrapper-edc">
+                <ul>
+                    <li>Mekargalih State Elementary School 
+                        <h4>(2014-2015)</h4>
+                    </li>
+                    <li>Junior High School 8 Bandung
+                        <h4>(2015-2018)</h4>
+                    </li>
+                    <li>Senior High School 26 Bandung
+                        <h4>
+                            (2019-2021)
+                        </h4>
+                    </li>
+                    <li>Associate Degree in Informatics Engineering
+                        <h4>
+                            (2021-2024)
+                        </h4>
+                    </li>
+                </ul>
+            </div>
         </section>
         <!-- Experience -->
         <section class="experience">
@@ -79,31 +99,74 @@
             </ul>
         </section>
         <!-- Projects -->
-        <section class="project">
+        <section class="project" id="project">
             <h1>
                 Projects
             </h1>
             <div class="project-wrapper">
                 <div class="project">
                     <img src="assets/fixedAsset.png" alt="">
-                    <h4>FIXED ASSET MANAGEMENT SYSTEM</h4>
+                    <h4>Fixed Asset Management System</h4>
                     <h5>2023-2024</h5>
-                    <p>Aplikasi yang berfungsi untuk mengelola aset tetap pada sebuah intansi,yang dimana aplikasi dapat melakuka inspeksi terhadap asset</p>
+                    <p>An application that functions to manage fixed assets in an agency, where the application can carry out inspections of assets.</p>
                     <a href=""></a>
                 </div>
                 <div class="project">
                     <img src="assets/home.png" alt="">
                     <h4>UMKMCONNECT</h4>
                     <h5>2024</h5>
-                    <p>Aplikasi yang diperuntukan untuk UMKM dan menjadi tugas akhir,berfungsi untuk mengelola sumber daya umkm,membantu meningkatkan visibilitas produk dan toko</p>
+                    <p>This application is intended for MSMEs and is a final assignment, functions to manage MSMEs resources, helps increase product and store visibility.</p>
                     <a href=""></a>
+                </div>
+            </div>
+        </section>
+        <!-- Sertificates -->
+        <section class="sertificate" id="sertificate">
+            <h1>
+                Sertificates
+            </h1>
+            <div class="sertificate-wrapper">
+                <div class="sertificate-jda">
+                    <h4>Jabar Digital Academy</h4>
+                 <div class="container">
+                    <div class="wrapper">
+                        <h3>Fase 1</h3>
+                        <img src="assets/sertif/fase1.png" alt="">
+                        <img src="assets/sertif/fase1_materi.png" alt="">
+                       </div>
+                       <div class="wrapper">
+                        <h3>Fase 2</h3>
+                        <img src="assets/sertif/fase2.png" alt="">
+                        <img src="assets/sertif/fase2_materi.png" alt="">
+                       </div>
+                        
+                 </div>
+                </div>
+                <div class="sertificate-dcd">
+                    <h4>Dicoding</h4>
+                    <div class="wrapper">
+                        <img src="assets/sertif/Back_end-1.png" alt="">
+                        <img src="assets/sertif/Front_end-1.png" alt="">
+                    </div>
+                </div>
+                <div class="sertificate-bts">
+                    <h4>Pt.Bts.id</h4>
+                    <div class="wrapper">
+                        <img src="assets/sertif/bts.id.png" alt="">
+                        <img src="assets/sertif/bts.id_nilai.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
     </main>
     <!-- footer -->
     <footer>
-
+        <div>
+            <p>&copy; 2024 Rahman Nurhayadi. All Rights Reserved.</p>
+        </div>
+        <div>
+            <a href="mailto:rahmannurhayadi@gmail.com" style="color: #ecf0f1; text-decoration: none;">rahmannurhayadi@gmail.com</a>
+        </div>
     </footer>
 
     <script src="script.js"></script>

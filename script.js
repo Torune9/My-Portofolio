@@ -102,7 +102,7 @@ skills.forEach((value, i) => {
 });
 
 window.addEventListener('scroll', () => {
-  const elements = document.querySelectorAll('.about,.skills,.project,.experience');
+  const elements = document.querySelectorAll('.about,.skills,.project,.experience,.sertificate');
 
   elements.forEach(el => {
     const position = el.getBoundingClientRect().top;
@@ -113,3 +113,11 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+
+const btnMenu  = document.getElementById('btn')
+const wrapperMenu = document.querySelector('.wrapper-menu')
+
+btnMenu.addEventListener('click',()=>{
+  wrapperMenu.classList.toggle('visible')
+})
