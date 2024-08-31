@@ -81,7 +81,7 @@ main {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    margin-top: 80px;
+    margin-top: 50px !important;
 }
 
 .profile {
