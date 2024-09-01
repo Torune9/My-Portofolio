@@ -102,7 +102,7 @@ skills.forEach((value, i) => {
 });
 
 window.addEventListener('scroll', () => {
-  const elements = document.querySelectorAll('.about,.skills,.project,.experience,.sertificate');
+  const elements = document.querySelectorAll('.about,.skills,.project,.experience,.sertificate,.tech');
 
   elements.forEach(el => {
     const position = el.getBoundingClientRect().top;
